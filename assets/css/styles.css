@@ -232,6 +232,7 @@ img {
 }
 .typewrite{
   display: table;
+  font-size:3rem;
   }
 .home__social {
   display: flex;
@@ -377,6 +378,9 @@ img {
 }
 .skills__seo {
   width: 90%;
+}
+.skills__wp {
+  width: 95%;
 }
 .skills__metasploit {
   width: 70%;
