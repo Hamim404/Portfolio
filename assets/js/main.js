@@ -1,3 +1,56 @@
+/*===== Header change color =====*/
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 78) {
+          $(".l-header").css("background" , "white");
+        }
+  
+        else{
+            $(".l-header").css("background" , "transparent");  	
+        }
+    })
+  })
+
+
+
+/*===== Background Particles =====*/ 
+var gutterWidth = 100;
+
+var Particle = function(x, y) {
+    var t = this;
+    t.x = x;
+    t.y = y;
+    
+    t.elem = $('<div class="particle" />');
+    t.elem.css({ left: x+"px", top: y+"px"});
+    
+    $('body').append(t.elem);
+    
+    /* create a new position every 500-1000 milliseconds */
+    var milliSecs = 1000 + Math.random() * 500;
+    t.ptinterval = setInterval(function() {
+        var dx = Math.round(Math.random() * gutterWidth);
+        var dy = Math.round(Math.random() * gutterWidth);
+        t.elem.animate({left: (t.x + dx)+"px", top: (t.y + dy) + "px"}, 600);  
+    }, milliSecs);
+};
+
+
+
+
+
+var particles = [];
+var newParticle;
+
+for(var x = 0; x < 1300; x = x + gutterWidth) {
+    for(var y = 0; y < 700; y = y + gutterWidth) {
+        newParticle = new Particle(x,y);
+        particles.push(newParticle);
+    }
+}
+
+
 /*===== Type Writer =====*/
 var TxtType = function (el, toRotate, period) {
     this.toRotate = toRotate;
@@ -122,7 +175,8 @@ sr.reveal(".home__img, .about__subtitle, .about__text, .skills__img", {
 sr.reveal(".home__social-icon", { interval: 200 });
 sr.reveal(".skills__data, .blog__img, .contact__input", { interval: 200 });
 
-// Mouse pointer effect
+
+/*===== Mouse pointer effect =====*/
 const coords = { x: 0, y: 0 };
 const pointers = document.querySelectorAll(".pointer");
 const colors = [
