@@ -162,7 +162,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: transparent;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -259,7 +259,14 @@ img {
   row-gap: 5rem;
   padding: 4rem 0 5rem;
 }
-
+.particle {
+  width: 2px;
+  height: 2px;
+  box-shadow: 0 0 5px #ff0049;
+  background: linear-gradient(to right, #3100ff, #ff0049);
+  border-radius: 100%;
+  position: absolute;
+}
 .home__data {
   align-self: center;
 }
