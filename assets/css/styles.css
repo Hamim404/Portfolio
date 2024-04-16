@@ -687,14 +687,5 @@ img {
     background: linear-gradient(to right, #3100ff, #ff0049);
     border-radius: 100%;
     position: absolute;
-    animation: filter linear 20s infinite;
-  }
-  @keyframes filter {
-    0%{
-      filter: hue-rotate(0deg);
-    }
-    100%{
-      filter: hue-rotate(360deg);
-    }
   }
 }
