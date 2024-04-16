@@ -259,14 +259,6 @@ img {
   row-gap: 5rem;
   padding: 4rem 0 5rem;
 }
-.particle {
-  width: 2px;
-  height: 2px;
-  box-shadow: 0 0 5px #ff0049;
-  background: linear-gradient(to right, #3100ff, #ff0049);
-  border-radius: 100%;
-  position: absolute;
-}
 .home__data {
   align-self: center;
 }
@@ -679,12 +671,21 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
-
   .home {
     padding: 10rem 0 2rem;
   }
 
   .home__img {
     width: 450px;
+  }
+}
+@media (min-width: 1315px) and (max-width: 1440px) {
+  .particle {
+    width: 2px;
+    height: 2px;
+    box-shadow: 0 0 5px #ff0049;
+    background: linear-gradient(to right, #3100ff, #ff0049);
+    border-radius: 100%;
+    position: absolute;
   }
 }
