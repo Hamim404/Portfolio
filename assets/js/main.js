@@ -5,9 +5,9 @@ $(document).ready(function(){
         if (scroll > 78) {
           $(".l-header").css("background" , "white");
         }
-  
+        
         else{
-            $(".l-header").css("background" , "transparent");  	
+            $(".l-header").css("background" , "transparent");
         }
     })
   })
