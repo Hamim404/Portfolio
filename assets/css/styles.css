@@ -681,8 +681,8 @@ img {
 }
 @media (min-width: 1315px) and (max-width: 1440px) {
   .particle {
-    width: 2px;
-    height: 2px;
+    width: 1.5px;
+    height: 1.5px;
     box-shadow: 0 0 5px #ff0049;
     background: linear-gradient(to right, #3100ff, #ff0049);
     border-radius: 100%;
